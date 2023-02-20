@@ -6,11 +6,11 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/hero";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+// небольшие элементы
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/phone-link";
+@import "./components/btn-search";
+@import "./components/btn-lk";

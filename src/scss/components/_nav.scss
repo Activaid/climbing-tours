@@ -1,0 +1,20 @@
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    @include mr(30px);
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--light-color);
+  }
+}
+
+.nav-header {
+  margin-right: 197px;
+}
