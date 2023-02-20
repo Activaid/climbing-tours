@@ -5,9 +5,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 70px;
   padding-top: 234px;
   padding-bottom: 204px;
   background-image: url("../img/hero-1.webp");
+  background-position: bottom;
 
   &__title {
     margin: 0;
