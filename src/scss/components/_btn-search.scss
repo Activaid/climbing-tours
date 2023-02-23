@@ -1,10 +1,20 @@
 .btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  padding: 10px;
+  width: 35px;
+  height: 35px;
   background-color: rgb(252 252 252 / 40%);
 
   svg {
     display: block;
+    width: 15px;
+    height: 15px;
+    fill: transparent;
+    stroke: var(--light-color);
+    stroke-width: 2px;
+    object-fit: cover;
   }
 }
 

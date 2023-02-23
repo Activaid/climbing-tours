@@ -36,7 +36,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -104,4 +105,13 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.section-title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 115%;
+  color: var(--dark-color);
 }

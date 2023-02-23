@@ -1,6 +1,6 @@
 .about {
   padding-top: 64px;
-  padding-bottom: 70px;
+  padding-bottom: 63px;
 
   &__container {
     display: flex;
@@ -8,13 +8,7 @@
   }
 
   &__title {
-    margin: 0;
     margin-bottom: 37px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 115%;
-    color: var(--dark-color);
   }
 
   &__descr {
