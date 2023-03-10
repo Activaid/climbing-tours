@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  justify-content: flex-start;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__item {
+    @include mr(26px);
+  }
+}
