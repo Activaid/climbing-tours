@@ -1,7 +1,7 @@
 .form {
   &__input {
     border-bottom: 1px solid #45545e;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 15px;
     width: 100%;
     color: var(--light-color);
@@ -14,11 +14,9 @@
     }
   }
 
-  &__label:last-of-type {
-    margin-bottom: 45px;
-  }
-
-  &__btn {
-    margin-bottom: 25px;
+  &__label {
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
   }
 }
