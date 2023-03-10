@@ -1,0 +1,49 @@
+.feedback {
+  position: relative;
+  background-color: var(--dark-color);
+
+  &::after {
+    @include bg-cover;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url("../img/feedback-pic.webp");
+    background-position: bottom;
+    transform: translateX(100%);
+  }
+
+  &__content {
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: var(--light-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 30px;
+    color: var(--light-color);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--light-color);
+  }
+}

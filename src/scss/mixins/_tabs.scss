@@ -1,13 +1,13 @@
 @mixin tabs {
-  .tabs__nav-btn--active {
-    background-color: #ff0001;
+  .tabs__nav-btn_active {
+    background-color: var(--dark-color);
   }
 
   .tabs__panel {
     display: none;
   }
 
-  .tabs__panel--active {
+  .tabs__panel_active {
     display: block;
   }
 }

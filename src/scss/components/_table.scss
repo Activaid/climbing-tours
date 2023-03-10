@@ -16,15 +16,15 @@
       }
 
       &:nth-child(2) {
-        width: (186px / 830px * 100%);
+        width: calc(186px / 830px) * 100%;
       }
 
       &:nth-child(3) {
-        width: (173px / 830px * 100%);
+        width: calc(173px / 830px * 100%);
       }
 
       &:nth-child(4) {
-        width: (180px / 830px * 100%);
+        width: calc(180px / 830px * 100%);
       }
     }
   }
