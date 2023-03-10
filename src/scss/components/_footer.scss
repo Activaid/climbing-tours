@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: var(--dark-color);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: calc(100% / 3);
+    text-align: center;
+  }
+}

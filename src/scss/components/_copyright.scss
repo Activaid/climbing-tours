@@ -1,0 +1,10 @@
+.copyright {
+  width: calc(100% / 3);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--light-color);
+
+  &:last-child {
+    text-align: right;
+  }
+}
