@@ -32,6 +32,7 @@
     width: 35px;
     height: 35px;
     background-color: rgb(252 252 252 / 40%);
+    transition: background-color 0.5s linear;
 
     svg {
       display: block;
@@ -39,6 +40,20 @@
       height: 13px;
       fill: var(--orange-color);
       object-fit: cover;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      background-color: var(--dark-color);
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover {
+      background-color: var(--dark-color);
+      transition: background-color 0.1s linear;
     }
   }
 

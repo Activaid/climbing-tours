@@ -130,4 +130,19 @@ a {
   line-height: 140%;
   color: var(--light-color);
   background-color: var(--orange-color);
+  transition: background-color 0.5s linear;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: var(--btn-hover-color);
+    transition: background-color 0.1s linear;
+  }
+
+  &:hover {
+    background-color: var(--btn-hover-color);
+    transition: background-color 0.1s linear;
+  }
 }

@@ -28,6 +28,7 @@
     flex-direction: column;
     border-bottom: 1px solid var(--dark-color);
     padding: 28px 20px 20px 30px;
+    transition: background-color 0.5s linear;
 
     &_active {
       background-color: #061b28;
@@ -39,6 +40,20 @@
       .blog__headline {
         color: var(--light-color);
       }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible:not(.blog__btn_active) {
+      background-color: var(--grey-color);
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover:not(.blog__btn_active) {
+      background-color: var(--grey-color);
+      transition: background-color 0.1s linear;
     }
   }
 

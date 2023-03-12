@@ -58,23 +58,3 @@
   align-items: center;
   justify-content: flex-end;
 }
-
-.btn-slider {
-  @include mr(25px);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  background-color: var(--grey-color);
-  transition: background-color 0.3s ease-in-out;
-
-  svg {
-    width: 20px;
-    height: 20px;
-    stroke: var(--dark-color);
-    stroke-width: 2px;
-  }
-}

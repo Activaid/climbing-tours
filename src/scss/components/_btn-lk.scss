@@ -6,6 +6,7 @@
   width: 35px;
   height: 35px;
   background-color: rgb(252 252 252 / 40%);
+  transition: background-color 0.5s linear;
 
   svg {
     display: block;
@@ -15,5 +16,19 @@
     stroke: var(--light-color);
     stroke-width: 2px;
     object-fit: cover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: var(--dark-color);
+    transition: background-color 0.1s linear;
+  }
+
+  &:hover:not(:focus) {
+    background-color: var(--dark-color);
+    transition: background-color 0.1s linear;
   }
 }

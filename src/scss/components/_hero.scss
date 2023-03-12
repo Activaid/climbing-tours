@@ -21,12 +21,29 @@
     color: var(--light-color);
   }
 
-  &__link {
+  &__btn {
     border: 2px solid var(--light-color);
     padding: 11px 41px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: var(--light-color);
+    transition: background-color 0.5s linear, color 0.5s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: var(--dark-color);
+      background-color: var(--light-color);
+      transition: background-color 0.1s linear, color 0.5s linear;
+    }
+
+    &:hover {
+      color: var(--dark-color);
+      background-color: var(--light-color);
+      transition: background-color 0.1s linear, color 0.5s linear;
+    }
   }
 }

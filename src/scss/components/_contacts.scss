@@ -42,4 +42,27 @@
     line-height: 140%;
     color: var(--dark-color);
   }
+
+  &__link {
+    transition: color 0.5s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: var(--orange-color);
+      transition: color 0.1s linear;
+    }
+
+    &:hover {
+      color: var(--orange-color);
+      transition: color 0.1s linear;
+    }
+
+    &:active {
+      color: var(--btn-hover-color);
+      transition: color 0.1s linear;
+    }
+  }
 }

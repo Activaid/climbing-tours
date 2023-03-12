@@ -2,13 +2,35 @@
   display: flex;
   justify-content: flex-start;
 
-  svg {
-    display: block;
-    width: 20px;
-    height: 20px;
-  }
-
   &__item {
     @include mr(26px);
+  }
+
+  &__link {
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      fill: var(--dark-color);
+      transition: fill 0.5s linear;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      svg {
+        fill: var(--orange-color);
+        transition: stroke 0.1s linear;
+      }
+    }
+
+    &:hover {
+      svg {
+        fill: var(--orange-color);
+        transition: stroke 0.1s linear;
+      }
+    }
   }
 }

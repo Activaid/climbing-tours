@@ -10,7 +10,39 @@
   }
 
   &__logo {
-    width: calc(100% / 3);
     text-align: center;
+    transition: color 0.5s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: var(--orange-color);
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover:not(:focus-visible) {
+      color: var(--orange-color);
+      transition: background-color 0.1s linear;
+    }
+  }
+
+  &__link {
+    transition: color 0.5s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: var(--orange-color);
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover:not(:focus-visible) {
+      color: var(--orange-color);
+      transition: background-color 0.1s linear;
+    }
   }
 }

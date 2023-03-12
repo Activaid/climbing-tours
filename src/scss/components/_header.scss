@@ -18,4 +18,22 @@
     display: flex;
     align-items: center;
   }
+
+  &__logo {
+    transition: color 0.5s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: var(--dark-color);
+      transition: background-color 0.1s linear;
+    }
+
+    &:hover:not(:focus) {
+      color: var(--dark-color);
+      transition: background-color 0.1s linear;
+    }
+  }
 }
